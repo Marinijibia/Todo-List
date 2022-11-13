@@ -15,14 +15,14 @@ const todoSchema = new Schema({
   },
   TimeOfTheTask: {
     require: true,
-    type: Number,
+    type: String,
   },
   dateOfTheTask: {
     require: true,
-    type: Number,
+    type: String,
   },
 },
-{ timestamps: true },
+{ timestamps: true }
 );
 
 const todoModel = model("Todo", todoSchema);

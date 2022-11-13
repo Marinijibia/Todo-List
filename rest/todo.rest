@@ -1,1 +1,29 @@
-GET http://127.0.0.1:3000 HTTP/1.1
+GET http://127.0.0.1:3000/todo HTTP/1.1
+
+###
+GET http://127.0.0.1:3000/todo/63703f30c3cdb605303668db HTTP/1.1
+
+###
+POST http://127.0.0.1:3000/todo/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Completing my node.js week 7 task",
+    "description": "Create a Node.js server using any framework of choice (optional) and appropriate folder structure (routes, controllers, models, etc.)",
+    "TimeOfTheTask": "10:25",
+    "dateOfTheTask": "12/11/2022"
+}
+
+###
+PUT http://127.0.0.1:3000/todo/63703f3bc3cdb605303668dd HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Completing my frontend week 6 and 7 task",
+    "description": "Testing our knowledge on javaScript by creating a image cerousal",
+    "TimeOfTheTask": "10:25",
+    "dateOfTheTask": "12/11/2022"
+}
+
+###
+DELETE http://127.0.0.1:3000/todo/637037ca1d05ba95d7649779 HTTP/1.1
